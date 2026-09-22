@@ -56,7 +56,7 @@ jobs:
         with:
           path: -/.cache/pip
           # key: 캐시의 이름표. 같은 key가 있으면 그 캐시를 복원한다.
-          key: ${{ runner.os }}-pip-${{ hashFiles("mlops-loan/requirements.txt") }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('mlops-loan/requirements.txt') }}
           # 같은 key가 없을 때, 앞 부분이 같은 이전 캐시라도 가져와서 일부 재사용한다.
           restore-keys: |
             ${{ runner.os }}-pip-
