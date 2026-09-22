@@ -10,3 +10,5 @@ wheels/
 .venv
 
 .env
+
+sample_predict.ipynb
